@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing navbar tailwind</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<body>
+    <!-- navbar goes here -->
+  <nav class="bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+    
+          <!-- logo -->
+          <div>
+              <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                <img src="/images/vector/CA.svg" alt="" class="h-6 w-6 mr-1">
+                <span class="font-bold">Cupertino Alliance</span>
+              </a>
+            </div>
+    
+          <!-- links -->
+          <div class="hidden md:flex items-center space-x-1">
+              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+              <a href="#" class="py5 px-3 text-gray-700 hover:text-gray-900">About Us</a>
+              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Government</a>
+              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Projects</a>
+              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Volunteer</a>
+              <a href="" class="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">Apply Now</a>
+          </div>
+    
+          <!-- mobile button goes here -->
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+    
+        </div>
+      </div>
+    
+      <!-- mobile menu -->
+      <div class="mobile-menu hidden md:hidden text-center">
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">Home</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">About Us</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">Government</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">Projects</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">Volunteer</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">Membership</a>
+      </div>
+  </nav>
+  <div class="grid place-content-center h-screen">
+    <div class="px-5">
+      <div>
+        <h2 class="font-extrabold text-6xl font-serif">
+          WIP
+        </h2>
+      </div>
+      <p class="font-mono text-sm">
+        acronym
+      </p>
+      <p class="font-mono font-bold text-lg italic">
+        work in progress
+      </p>
+    </div>
+  </div>  
+    <script src="/app.js"></script>
+</body>
+</html>
