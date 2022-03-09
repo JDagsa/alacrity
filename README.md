@@ -10,7 +10,7 @@ Project Alacrity is a project by the Ministry of Technology under the leadership
 Alacrity is in version 2.
 
 ## Prior versions
-Alacrity 1.0 was the first version of this project. It set out to accomplish the same two goals that 2.0 currently sets out to accomplish, but did not mention the simplification of the development and updating process. As a result, it became very hard to style the HTML and create the responsive expereince, and ultimately was abandoned in favor of Tailwind and Alacrity 2.0.
+Alacrity 1.0 was the first version of this project. It set out to accomplish the same two goals that 2.0 currently sets out to accomplish, but did not mention the simplification of the development and updating process. As a result, it became very hard to style the HTML and create the responsive experience, and ultimately was abandoned in favor of Tailwind and Alacrity 2.0.
 
 ## Setting up
 
