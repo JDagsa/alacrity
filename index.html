@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <body>
     <!-- navbar goes here -->
-  <nav class="bg-gray-100">
+  <nav class="bg-blue-500">
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
     
           <!-- logo -->
           <div>
-              <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+              <a href="#" class="flex items-center py-5 px-2 text-gray-100 hover:text-gray-200">
                 <img src="./images/vector/CA.svg" alt="" class="h-6 w-6 mr-1">
                 <span class="font-bold">Cupertino Alliance</span>
               </a>
@@ -27,18 +27,18 @@
     
           <!-- links -->
           <div class="hidden md:flex items-center space-x-1">
-              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
-              <a href="#" class="py5 px-3 text-gray-700 hover:text-gray-900">About Us</a>
-              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Government</a>
-              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Projects</a>
-              <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Volunteer</a>
-              <a href="" class="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">Apply Now</a>
+              <a href="#" class="py-5 px-3 text-gray-100 hover:text-gray-200">Home</a>
+              <a href="#" class="py5 px-3 text-gray-100 hover:text-gray-200">About Us</a>
+              <a href="#" class="py-5 px-3 text-gray-100 hover:text-gray-200">Government</a>
+              <a href="#" class="py-5 px-3 text-gray-100 hover:text-gray-200">Projects</a>
+              <a href="#" class="py-5 px-3 text-gray-100 hover:text-gray-200">Volunteer</a>
+              <a href="" class="py-2 px-3 bg-green-500 hover:bg-green-400 text-green-900 hover:text-green-800 rounded transition duration-300">Apply Now</a>
           </div>
     
           <!-- mobile button goes here -->
           <div class="md:hidden flex items-center">
             <button class="mobile-menu-button">
-              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="w-6 h-6 text-gray-100 hover:text-gray-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
@@ -48,29 +48,60 @@
       </div>
     
       <!-- mobile menu -->
-      <div class="mobile-menu hidden md:hidden text-center">
-        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">Home</a>
-        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">About Us</a>
-        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">Government</a>
-        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">Projects</a>
-        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">Volunteer</a>
-        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200">Membership</a>
+      <div class="mobile-menu hidden md:hidden text-center duration-500 transition-all">
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50">Home</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50">About Us</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50">Government</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50">Projects</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50">Volunteer</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50">Membership</a>
       </div>
   </nav>
-  <div class="grid place-content-center h-screen">
-    <div class="px-5">
+  <div class="grid place-content-center h-screen dark:bg-black dark:text-gray-50">
+    <div class="flex flex-col space-y-5">
       <div>
         <h2 class="font-extrabold text-6xl font-serif">
           WIP
         </h2>
+        <p class="font-mono text-sm">
+          acronym
+        </p>
       </div>
-      <p class="font-mono text-sm">
-        acronym
-      </p>
-      <p class="font-mono font-bold text-lg italic">
-        work in progress
-      </p>
+      <div>
+        <p class="font-mono font-bold text-lg italic">
+          - work in progress
+        </p>
+      </div>
     </div>
+    <button class="mt-10 font-serif font-bold dark-toggle flex">
+      <svg  class="w-6 h-6 sun" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round"
+             stroke-linejoin="round" 
+             stroke-width="2" 
+             d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+            </path>
+          </svg>
+      </svg>
+      <svg  class="w-6 h-6 hidden dark:text-gray-50 moon"
+            fill="none"
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round"
+                  stroke-linejoin="round" 
+                  stroke-width="2" 
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  >
+            </path>
+      </svg>
+      <p class="ml-2">
+        Toggle dark mode
+      </p>
+    </button>
   </div>  
     <script src="/app.js"></script>
 </body>
