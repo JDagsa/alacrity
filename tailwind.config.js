@@ -11,25 +11,24 @@ module.exports = {
         mono: ["IBM Plex Mono", ...defaultTheme.fontFamily.mono],
       },
       screens: {
-        'md': '809px',
+        'md': '832px',
       },
       backgroundImage: {
-        'cupertinopoint': "url('../images/non-vector/1280px-Cupertinopoint.jpeg')",
+        'cupertinopoint': "url('/images/non-vector/1280px-Cupertinopoint.jpeg')",
+        'assembly': "url('/images/non-vector/assembly.jpeg')",
       },
       keyframes: {
         'fade-in-down': {
             '0%': {
-                opacity: '0',
-                transform: 'translateY(10px)'
+                transform: 'translateY(100px)'
             },
             '100%': {
-                opacity: '1',
                 transform: 'translateY(0)'
             },
           }
       },
       animation: {
-        'fade-in-down': 'fade-in-down 1s ease-out'
+        'fade-in-down': 'fade-in-down 1s ease'
       }
     },
   },

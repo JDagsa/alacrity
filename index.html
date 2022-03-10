@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing navbar tailwind</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Alacrity 2.0</title>
+    <meta content="Alacrity 2.0" property="og:title" />
+    <meta content="Alacrity 2.0: the future of the Cupertino Alliance online." property="og:description" />
+    <meta content="https://jdagsa.github.io/alacrity" property="og:url" />
+    <meta content="/images/vector/CA.svg" property="og:image" />
+    <meta content="#1d4ed8" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./blur.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/images/vector/CA.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -19,16 +26,16 @@
     
           <!-- logo -->
           <div>
-              <a href="#" class="flex items-center py-5 px-2 text-gray-200 hover:text-gray-100 transition duration-300">
-                <img src="../images/vector/CA.svg" alt="" class="h-6 w-6 mr-1">
-                <span class="font-bold">Cupertino Alliance</span>
+              <a href="#" class="flex items-center py-5 px-2 space-x-1 text-gray-200 hover:text-gray-100 transition duration-300">
+                <img src="./images/vector/CA.svg" alt="" class="h-6 w-6 mr-1">
+                <span class="font-bold text-2xl md:text-lg">Cupertino Alliance</span>
               </a>
             </div>
     
           <!-- links -->
           <div class="hidden md:flex items-center space-x-1">
               <a href="#" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">Home</a>
-              <a href="../#aboutUs" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">About Us</a>
+              <a href="./#aboutUs" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">About Us</a>
               <a href="#" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">Government</a>
               <a href="#" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">Projects</a>
               <a href="#" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">Volunteer</a>
@@ -57,7 +64,7 @@
       <!-- mobile menu -->
       <div class="mobile-menu hidden md:hidden text-center duration-500 transition-all">
         <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">Home</a>
-        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">About Us</a>
+        <a href="#aboutUs" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">About Us</a>
         <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">Government</a>
         <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">Projects</a>
         <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">Volunteer</a>
@@ -65,18 +72,21 @@
       </div>
   </nav>
   <div class="flex flex-col h-screen dark:bg-gray-800 dark:text-gray-50">
-    <div class="bg-cupertinopoint bg-cover w-screen flex flex-col justify-center">
-      <h1 class="m-10 text-center text-6xl text-gray-50 drop-shadow-lg font-bold">Welcome to the Cupertino Alliance</h1>
-      <p class="px-20 text-xl text-center text-gray-50 drop-shadow-lg mb-10">
-        "By being in the Alliance, you've already shown yourself as 
-        a nation that is trustworthy, successful and can be counted on. 
-        As we come together to work on issues we have in common and find 
-        ethical, practical solutions, we must also realize that the outside 
-        world is also looking at this alliance." 
+    <div class="bg-cupertinopoint bg-cover w-screen bg-fixed">
+      <div class="flex flex-col justify-center backdrop-blur-lg">
+        <h1 class="p-10 pb-5 text-center text-6xl text-gray-50 drop-shadow-lg font-bold">Welcome to the Cupertino Alliance</h1>
+        <p class="px-20 text-xl text-center text-gray-50 drop-shadow-lg pb-10">
+          "By being in the Alliance, you've already shown yourself as 
+          a nation that is trustworthy, successful and can be counted on. 
+          As we come together to work on issues we have in common and find 
+          ethical, practical solutions, we must also realize that the outside 
+          world is also looking at this alliance." 
 
-        <span class="h-3 italic font-semibold">- William Efton, former Chair</span>
-      </p>
-      <a href="#" class="py-3 px-4 text-xl bg-blue-600 hover:bg-blue-500 text-gray-200 hover:text-gray-100 dark:bg-blue-900 dark:hover:bg-blue-800 rounded transition duration-300 mx-auto mb-10">Join the CA</a>
+          <span class="h-3 italic font-semibold">- William Efton, former Chair</span>
+        </p>
+        <a href="#" class="py-3 px-4 text-xl bg-blue-600 hover:bg-blue-500 text-gray-200 hover:text-gray-100 dark:bg-blue-900 dark:hover:bg-blue-800 rounded transition duration-300 mx-auto mb-10">Join the CA</a>
+      </div>
+      
     </div>
     <div class="bg-white dark:bg-gray-800 dark:text-white">
       <div class="flex flex-col justify-center space-y-2">
@@ -88,11 +98,11 @@
         </div>
       </div>
       <div class="flex flex-col md:flex-row">
-        <div class="w-screen h-auto md:w-1/2 md:h-1/2">
-          <img src="../images/non-vector/about.jpeg" alt="" class="object-cover">
+        <div class="w-screen h-auto md:w-1/2 md:h-1/2 object-fill">
+          <img src="./images/non-vector/about.jpeg" alt="">
         </div>
         <div class="py-10 px-10 flex flex-col justify-center md:w-1/2">
-          <p>
+          <p class="text-center md:text-left">
             There are many organizations in the micronational community. So many in fact, 
             they are often referred to as "YAMO"; "Yet Another Micronational Organization". 
             They often exhibit the failure of identifying problems in the community, many 
@@ -107,7 +117,39 @@
             have put into place is for our members. We are a rising star in the micronational 
             community.
           </p>
-          <a href="#" class="py-3 px-4 mt-10 text-xl bg-blue-600 hover:bg-blue-500 text-gray-200 hover:text-gray-100 dark:bg-blue-900 dark:hover:bg-blue-800 rounded transition duration-300 mx-auto mb-10">Join the CA</a>
+          <a href="#" class="py-3 px-4 mt-10 text-xl place-self-start bg-blue-600 hover:bg-blue-500 text-gray-200 hover:text-gray-100 dark:bg-blue-900 dark:hover:bg-blue-800 rounded transition duration-300 mx-auto md:mx-0 mb-10">Join the CA</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-assembly bg-cover w-screen flex flex-col justify-center bg-fixed ">
+      <div class="flex flex-col md:grid md:grid-cols-4 divide-y md:divide-x md:divide-y-0 p-10 backdrop-blur-lg">
+        <div class="pb-10 md:pr-10 md:py-10 drop-shadow-lg">
+          <h3 class="text-white text-4xl text-center font-bold drop-shadow-lg">35</h3>
+          <h4 class="text-white text-xl text-center">FULL MEMBERS</h4>
+          <p class="text-white text-center">
+            They gain access to all programs, get to run for Chair, Lieutenant Chair, Superior Judge, Associate Judge, and ministerial positions, as well as be allowed to appoint 3 delegates.
+          </p>
+        </div>
+        <div class="py-10 md:p-10">
+          <h3 class="text-white text-4xl text-center font-bold">6</h3>
+          <h4 class="text-white text-xl text-center">PROVISIONAL MEMBERS</h4>
+          <p class="text-white text-center">
+            They do not have access to programs nor are allowed to run for positions, but are allowed to appoint 3 delegates to report to Parliament.
+          </p>
+        </div>
+        <div class="py-10 md:items-center md:p-10">
+          <h3 class="text-white text-4xl text-center font-bold">150+</h3>
+          <h4 class="text-white text-xl text-center">SESSIONS</h4>
+          <p class="text-white text-center">
+            All delegates of the Cupertino Alliance report to Parliament in a session, where delegates discuss Cupertino Alliance legislation, issues, new programs, and the like.
+          </p>
+        </div>
+        <div class="pt-10 md:pl-10 md:py-10">
+          <h3 class="text-white text-4xl text-center font-bold drop-shadow-lg">56</h3>
+          <h4 class="text-white text-xl text-center">DELEGATES</h4>
+          <p class="text-white text-center">
+            Delegates represent their nation that they were appointed by, report to Parliament where they vote and discuss on issues and legislature, and can participate in Alliance events, run for positions, etc.
+          </p>
         </div>
       </div>
     </div>
@@ -141,6 +183,6 @@
       </p>
     </button>
   </div>  
-    <script src="../app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
