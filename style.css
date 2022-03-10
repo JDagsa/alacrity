@@ -647,11 +647,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-cupertinopoint {
-  background-image: url('../alacrity/images/non-vector/1280px-Cupertinopoint.jpeg');
+  background-image: url('./images/non-vector/1280px-Cupertinopoint.jpeg');
 }
 
 .bg-assembly {
-  background-image: url('../alacrity/images/non-vector/assembly.jpeg');
+  background-image: url('./images/non-vector/assembly.jpeg');
 }
 
 .bg-cover {

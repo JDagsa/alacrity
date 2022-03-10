@@ -14,8 +14,8 @@ module.exports = {
         'md': '832px',
       },
       backgroundImage: {
-        'cupertinopoint': "url('../alacrity/images/non-vector/1280px-Cupertinopoint.jpeg')",
-        'assembly': "url('../alacrity/images/non-vector/assembly.jpeg')",
+        'cupertinopoint': "url('./images/non-vector/1280px-Cupertinopoint.jpeg')",
+        'assembly': "url('./images/non-vector/assembly.jpeg')",
       },
       keyframes: {
         'fade-in-down': {
