@@ -27,6 +27,9 @@ if (darkMode === "enabled") {
   moon.classList.remove("hidden");
   darkStatus = "off"
   statusPrint.innerHTML=darkStatus
+} else {
+  darkStatus = "on"
+  statusPrint.innerHTML=darkStatus
 }
 
 mainShow.addEventListener("click", () => {
