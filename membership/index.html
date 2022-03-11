@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alacrity 2.0</title>
+    <meta content="Alacrity 2.0" property="og:title" />
+    <meta content="Alacrity 2.0: the future of the Cupertino Alliance online." property="og:description" />
+    <meta content="https://jdagsa.github.io/alacrity" property="og:url" />
+    <meta content="../images/vector/CA.svg" property="og:image" />
+    <meta content="#1d4ed8" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/images/vector/CA.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<body>
+    <!-- navbar goes here -->
+  <nav class="bg-blue-500 dark:bg-blue-900 w-screen">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+    
+          <!-- logo -->
+          <div>
+              <a href="#" class="flex items-center py-5 px-2 space-x-1 text-gray-200 hover:text-gray-100 transition duration-300">
+                <img src="../images/vector/CA.svg" alt="" class="h-6 w-6 mr-1">
+                <span class="font-bold text-2xl md:text-lg">Cupertino Alliance</span>
+              </a>
+            </div>
+    
+          <!-- links -->
+          <div class="hidden md:flex items-center space-x-1">
+              <a href="../" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">Home</a>
+              <a href="../#aboutUs" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">About Us</a>
+              <a href="#" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">Government</a>
+              <a href="../#projects" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">Projects</a>
+              <a href="#" class="py-5 px-3 text-gray-200 hover:text-gray-100 transition duration-300">Volunteer</a>
+              <a href="./" class="py-2 px-3 bg-green-500 hover:bg-green-400 text-green-200 dark:bg-green-600 dark:hover:bg-green-500 hover:text-green-100 rounded transition duration-300">Apply Now</a>
+          </div>
+    
+          <!-- mobile button goes here -->
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+              <svg  class="w-6 h-6 text-gray-200 hover:text-gray-100 transition duration-300"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round" 
+                      stroke-width="2" 
+                      d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+    
+        </div>
+      </div>
+    
+      <!-- mobile menu -->
+      <div class="mobile-menu hidden md:hidden text-center duration-500 transition-all">
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">Home</a>
+        <a href="../#aboutUs" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">About Us</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">Government</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">Projects</a>
+        <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">Volunteer</a>
+        <a href="./" class="block py-2 px-4 text-lg hover:bg-gray-200 hover:text-gray-900 text-gray-50 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition duration-300">Membership</a>
+      </div>
+  </nav>
+  <div class="flex flex-col h-screen dark:bg-gray-900 dark:text-gray-50">
+    <div class="bg-white dark:bg-gray-900 dark:text-white">
+      <div class="flex flex-col justify-center space-y-2">
+        <div class="mx-auto">
+          <h1 class="font-bold text-4xl m-10" id="aboutUs">ARE YOU READY TO JOIN?</h1>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row">
+        <div class="w-screen md:w-1/2 md:h-auto">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd42U4PAJBwGk85p6vtsS9Zj0hAZr1lNWEQ-vjCpwB63F9eKg/viewform?embedded=true" frameborder="0" class="w-full h-[500px] md:h-full"></iframe>
+        </div>
+        <div class="py-10 px-10 flex flex-col justify-center md:w-1/2">
+          <p class="text-center md:text-left">
+            Interested in joining? We would love to have you be a part of this great 
+            alliance! Since our founding on 28 January 2020, we have grown to amass 
+            into one of the community's well known organizations, with a lot of members 
+            working together for the mission of this alliance.<br><br>
+
+            Members get access to our wide-range of useful projects, including 
+            participating in the critically acclaimed Cupertino Alliance Factbook, our 
+            famous video electoral graphics, and access to a friendly and active space 
+            encouraging collective growth.<br><br>
+
+            Everything's free. No hidden costs in these projects unless it is clearly listed. 
+            All you pay to us is your activity within the alliance.<br><br>
+
+            Feel free to take the self-assesment to see if you are eligible. The membership 
+            process includes a short provisional period if you are seeking full membership.
+
+
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSew0AdbyHImiygDLkiYW-bjKiBewFvn3x1CPG7_tQ7f_BDSSQ/viewform" class="py-3 px-4 mt-10 text-xl place-self-start bg-blue-600 hover:bg-blue-500 text-gray-200 hover:text-gray-100 dark:bg-blue-900 dark:hover:bg-blue-800 rounded transition duration-300 mx-auto md:mx-0 mb-10">Apply Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="dark:bg-gray-900">
+      <div class="flex flex-col justify-center space-y-2">
+        <div class="mx-auto mt-10">
+          <h1 class="font-bold text-4xl px-10" id="projects">NOT READY YET?</h1>
+        </div>        
+        <div class="mx-auto text-center">
+          <p class="italic text-xl mx-10">Consider using these resources.</p>
+        </div>
+      </div>
+      <div class="flex space-x-10 snap-x p-10 md:mx-auto md:justify-center overflow-x-auto">
+        <div class="max-w-sm rounded shadow-lg flex-shrink-0 dark:bg-gray-900 dark:shadow-black snap-center my-auto">
+          <img class="w-full" src="../images/non-vector/cupertinoguide.png" alt="Cupertino Guides">
+          <div class="px-6 py-4 flex flex-col space-y-2">
+            <div class="font-bold text-xl dark:text-white">Cupertino Guides</div>
+            <p class="text-gray-700 dark:text-gray-300 text-base">
+              The Cupertino Guides are tutorials to help set up the foundation for your nation and your online presence.
+            </p>
+            <a href="https://micronations.wiki/wiki/Cupertino_Guide/Welcome" class="px-4 py-2 place-self-start bg-blue-600 hover:bg-blue-500 text-gray-200 hover:text-gray-100 dark:bg-blue-900 dark:hover:bg-blue-800 rounded transition duration-300">Open Guides</a>
+          </div>
+        </div>
+        <div class="max-w-sm rounded shadow-lg flex-shrink-0 dark:bg-gray-900 dark:shadow-black snap-center my-auto">
+          <img class="w-full" src="../images/non-vector/cupertinoguidedoctemplate.png" alt="Cupertino Guides Document Templates">
+          <div class="px-6 py-4 flex flex-col space-y-2">
+            <div class="font-bold text-xl dark:text-white">Cupertino Guides Document Templates</div>
+            <p class="text-gray-700 dark:text-gray-300 text-base">
+              A supplementary resource to the Cupertino Guides, these document templates help you set up your nation and government.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1k72-Sp_nyI6oShNEU9-hKMDlSuJLcYZn?usp=sharing" class="px-4 py-2 place-self-start bg-blue-600 hover:bg-blue-500 text-gray-200 hover:text-gray-100 dark:bg-blue-900 dark:hover:bg-blue-800 rounded transition duration-300">See templates</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col border-t-2 border-t-gray-200 dark:bg-gray-900 dark:border-t-gray-500">
+      <div class="hidden md:flex space-x-10 py-10 justify-center">
+        <div class="dark:text-white list-none">
+          <h2 class="font-semibold text-xl">Main website</h2>
+          <ul>
+            <li><a href="../" class="no-underline">Home</a></li>
+            <li><a href="../#aboutUs" class="no-underline">About us</a></li>
+            <li><a href="../#" class="no-underline">Government</a></li>
+            <li><a href="../#projects" class="no-underline">Projects</a></li>
+            <li><a href="../#" class="no-underline">Volunteer</a></li>
+            <li><a href="./" class="no-underline">Membership</a></li>
+          </ul>
+        </div>
+        <div class="dark:text-white list-none">
+          <h2 class="font-semibold text-xl">Projects</h2>
+          <ul>
+            <li><a href="https://noted.cupertinoalliance.com/" class="no-underline">Noted! Tours</a></li>
+            <li><a href="https://micronations.wiki/wiki/Cupertino_Service_Ribbon" class="no-underline">Cupertino Service Ribbon</a></li>
+            <li><a href="https://micronations.wiki/wiki/Category:Edinburgh_System" class="no-underline">Edinburgh system</a></li>
+            <li><a href="https://micronations.wiki/wiki/Cupertino_Alliance_quality_pictures" class="no-underline">Calgary system</a></li>
+            <li><a href="https://micronations.wiki/wiki/Cupertino_Gazette" class="no-underline">Cupertino Gazette</a></li>
+            <li><a href="https://micronations.wiki/wiki/Cupertino_Alliance_Factbook" class="no-underline">CA Factbook</a></li>
+            <li><a href="https://micronations.wiki/wiki/Cupertino_Guide/Welcome" class="no-underline">Cupertino Guides</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1k72-Sp_nyI6oShNEU9-hKMDlSuJLcYZn?usp=sharing" class="no-underline">CA Guides Templates</a></li>
+            <li><a href="https://micronations.ca" class="no-underline">micronations.ca</a></li>
+            <li><a href="https://micronear.cupertinoalliance.ca" class="no-underline">MicroNear</a></li>
+          </ul>
+        </div>
+        <div class="dark:text-white list-none">
+          <h2 class="font-semibold text-xl">Agencies</h2>
+          <ul>
+            <li><a href="https://development-cupertinoalliance-ca.github.io/" class="no-underline">Ministry of Development</a></li>
+            <li><a href="https://printer.cupertinoalliance.ca" class="no-underline">CA Printer</a></li>
+            <li><a href="https://nacre.cupertinoalliance.ca" class="no-underline">Nacre</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="md:hidden">
+        <div>
+          <div class="max-w-screen-md px-4">
+            <div class="flex justify-between">
+        
+              <!-- logo -->
+              <div>
+                  <a href="#" class="flex items-center py-5 px-2 space-x-1 dark:text-gray-200 dark:hover:text-gray-100 transition duration-300">
+                    <span class="font-semibold text-2xl md:text-lg">Main website</span>
+                  </a>
+              </div>
+        
+              <!-- mobile button goes here -->
+              <div class="md:hidden flex items-center">
+                <button class="main-show">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 dark:text-gray-200 dark:hover:text-gray-100 transition duration-300 mainExpand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 dark:text-gray-200 dark:hover:text-gray-100 transition duration-300 hidden mainClose" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+        
+            </div>
+          </div>
+        
+          <!-- mobile menu -->
+          <div class="main md:hidden text-left duration-500 transition-all hidden">
+            <a href="#" class="block pb-1 px-6 text-lg dark:text-gray-50 transition duration-300">Home</a>
+            <a href="../#aboutUs" class="block py-1 px-6 text-lg dark:text-gray-50 transition duration-300">About Us</a>
+            <a href="#" class="block py-1 px-6 text-lg dark:text-gray-50 transition duration-300">Government</a>
+            <a href="#" class="block py-1 px-6 text-lg dark:text-gray-50 transition duration-300">Projects</a>
+            <a href="#" class="block py-1 px-6 text-lg dark:text-gray-50 transition duration-300">Volunteer</a>
+            <a href="../membership/" class="block pt-1 px-6 text-lg dark:text-gray-50 transition duration-300">Membership</a>
+          </div>
+        </div>
+        <div>
+          <div class="max-w-screen-md px-4">
+            <div class="flex justify-between">
+        
+              <!-- logo -->
+              <div>
+                  <a href="#" class="flex items-center py-5 px-2 space-x-1 dark:text-gray-200 dark:hover:text-gray-100 transition duration-300">
+                    <span class="font-semibold text-2xl md:text-lg">Projects</span>
+                  </a>
+              </div>
+        
+              <!-- mobile button goes here -->
+              <div class="md:hidden flex items-center">
+                <button class="projects-show">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 dark:text-gray-200 dark:hover:text-gray-100 transition duration-300 projectsExpand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 dark:text-gray-200 dark:hover:text-gray-100 transition duration-300 hidden projectsClose" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+        
+            </div>
+          </div>
+        
+          <!-- mobile menu -->
+          <div class="projects md:hidden text-left duration-500 transition-all hidden">
+            <a href="https://noted.cupertinoalliance.com/" class="block pb-1 px-6 text-lg dark:text-gray-50 transition duration-300">Noted! Tours</a>
+            <a href="https://micronations.wiki/wiki/Cupertino_Service_Ribbon" class="block pb-1 px-6 text-lg dark:text-gray-50 transition duration-300">Cupertino Service Ribbon</a>
+            <a href="https://micronations.wiki/wiki/Category:Edinburgh_System" class="block pb-1 px-6 text-lg dark:text-gray-50 transition duration-300">Edinburgh system</a>
+            <a href="https://micronations.wiki/wiki/Cupertino_Alliance_quality_pictures" class="block pb-1 px-6 text-lg dark:text-gray-50 transition duration-300">Calgary system</a>
+            <a href="https://micronations.wiki/wiki/Cupertino_Gazette" class="block pt-1 px-6 text-lg dark:text-gray-50 transition duration-300">Cupertino Gazette</a>
+            <a href="https://micronations.wiki/wiki/Cupertino_Alliance_Factbook" class="block pt-1 px-6 text-lg dark:text-gray-50 transition duration-300">CA Factbook</a>
+            <a href="https://micronations.wiki/wiki/Cupertino_Guide/Welcome" class="block pt-1 px-6 text-lg dark:text-gray-50 transition duration-300">Cupertino Guide</a>
+            <a href="https://drive.google.com/drive/folders/1k72-Sp_nyI6oShNEU9-hKMDlSuJLcYZn?usp=sharing" class="block pt-1 px-6 text-lg dark:text-gray-50 transition duration-300">CA Guides Templates</a>
+            <a href="https://micronear.cupertinoalliance.ca" class="block py-1 px-6 text-lg dark:text-gray-50 transition duration-300">MicroNear</a>
+            <a href="https://micronations.ca" class="block pt-1 px-6 text-lg dark:text-gray-50 transition duration-300">micronations.ca</a>
+          </div>
+        </div>
+        <div>
+          <div class="max-w-screen-md px-4">
+            <div class="flex justify-between">
+        
+              <!-- logo -->
+              <div>
+                  <a href="#" class="flex items-center py-5 px-2 space-x-1 dark:text-gray-200 dark:hover:text-gray-100 transition duration-300">
+                    <span class="font-semibold text-2xl md:text-lg">Agencies</span>
+                  </a>
+              </div>
+        
+              <!-- mobile button goes here -->
+              <div class="md:hidden flex items-center">
+                <button class="agencies-show">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 dark:text-gray-200 dark:hover:text-gray-100 transition duration-300 agenciesExpand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 dark:text-gray-200 dark:hover:text-gray-100 transition duration-300 hidden agenciesClose" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+        
+            </div>
+          </div>
+        
+          <!-- mobile menu -->
+          <div class="agencies md:hidden text-left duration-500 transition-all hidden">
+            <a href="https://development-cupertinoalliance-ca.github.io/" class="block pb-1 px-6 text-lg dark:text-gray-50 transition duration-300">Ministry of Development</a>
+            <a href="https://printer.cupertinoalliance.ca" class="block py-1 px-6 text-lg dark:text-gray-50 transition duration-300">CA Printer</a>
+            <a href="https://nacre.cupertinoalliance.ca" class="block py-1 px-6 text-lg dark:text-gray-50 transition duration-300">Nacre</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mb-10">
+        <div class="flex flex-col md:flex-row md:space-x-4">
+          <div>
+            <img src="../images/vector/CA.svg" alt="" class="h-20 mx-auto"/>
+          </div>
+          <div class="dark:text-white my-auto text-center md:text-left">
+            <h1 class="text-2xl font-semibold">Cupertino Alliance</h1>
+            <p>Copyright © <script>document.write(new Date().getFullYear())</script> Ministry of Technology. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="font-bold dark-toggle flex rounded-full justify-center py-3 shadow-md  bg-gray-50 dark:bg-gray-900 dark:shadow-black fixed z-10 bottom-5 right-5 px-5 animate-fade-in-down">
+      <svg  class="w-6 h-6 sun" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round"
+             stroke-linejoin="round" 
+             stroke-width="2" 
+             d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+            </path>
+          </svg>
+      </svg>
+      <svg  class="w-6 h-6 hidden dark:text-gray-50 moon"
+            fill="none"
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round"
+                  stroke-linejoin="round" 
+                  stroke-width="2" 
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  >
+            </path>
+      </svg>
+      <p class="ml-2">
+        Turn <span class="toggle-status"></span> dark mode
+      </p>
+    </button>
+  </div>  
+    <script src="../app.js"></script>
+</body>
+</html>
